@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite">
+              <span class="suite-name border-failed">com.consumercredits.dod.TestNG_DoDTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-com.consumercredits.dod.TestNG_DoDTestSuite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-com.consumercredits.dod.TestNG_DoDTestSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-com.consumercredits.dod.TestNG_DoDTestSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-com.consumercredits.dod.TestNG_DoDTestSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-com.consumercredits.dod.TestNG_DoDTestSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-com.consumercredits.dod.TestNG_DoDTestSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-com.consumercredits.dod.TestNG_DoDTestSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 3 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" class="hide-methods failed suite-com.consumercredits.dod.TestNG_DoDTestSuite"> (hide)</a> <!-- hide-methods failed suite-com.consumercredits.dod.TestNG_DoDTestSuite -->
+                      <a href="#" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" class="show-methods failed suite-com.consumercredits.dod.TestNG_DoDTestSuite"> (show)</a> <!-- show-methods failed suite-com.consumercredits.dod.TestNG_DoDTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-com.consumercredits.dod.TestNG_DoDTestSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" title="com.consumercredits.dod.TestNG_DoDTestSuite" hash-for-method="boReachCheck">boReachCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" title="com.consumercredits.dod.TestNG_DoDTestSuite" hash-for-method="languageChangeCheck">languageChangeCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" title="com.consumercredits.dod.TestNG_DoDTestSuite" hash-for-method="successSearch">successSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-com.consumercredits.dod.TestNG_DoDTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" class="hide-methods passed suite-com.consumercredits.dod.TestNG_DoDTestSuite"> (hide)</a> <!-- hide-methods passed suite-com.consumercredits.dod.TestNG_DoDTestSuite -->
+                      <a href="#" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" class="show-methods passed suite-com.consumercredits.dod.TestNG_DoDTestSuite"> (show)</a> <!-- show-methods passed suite-com.consumercredits.dod.TestNG_DoDTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-com.consumercredits.dod.TestNG_DoDTestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" title="com.consumercredits.dod.TestNG_DoDTestSuite" hash-for-method="accountGroupVerification(213319101, CRCPL)">accountGroupVerification(213319101, CRCPL)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" title="com.consumercredits.dod.TestNG_DoDTestSuite" hash-for-method="accountGroupVerification(490969917, CCPL)">accountGroupVerification(490969917, CCPL)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" title="com.consumercredits.dod.TestNG_DoDTestSuite" hash-for-method="accountGroupVerification(213101882, CCNPL)">accountGroupVerification(213101882, CCNPL)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" title="com.consumercredits.dod.TestNG_DoDTestSuite" hash-for-method="accountGroupVerification(101192592, CSPL)">accountGroupVerification(101192592, CSPL)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" title="com.consumercredits.dod.TestNG_DoDTestSuite" hash-for-method="accountGroupVerification(107362252, CRPL)">accountGroupVerification(107362252, CRPL)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" title="com.consumercredits.dod.TestNG_DoDTestSuite" hash-for-method="accountGroupVerification(12345888, ALFAM)">accountGroupVerification(12345888, ALFAM)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" title="com.consumercredits.dod.TestNG_DoDTestSuite" hash-for-method="accountGroupVerification(213116782, CRCNPL)">accountGroupVerification(213116782, CRCNPL)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-com.consumercredits.dod.TestNG_DoDTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-com.consumercredits.dod.TestNG_DoDTestSuite" class="panel com.consumercredits.dod.TestNG_DoDTestSuite">
+          <div class="suite-com.consumercredits.dod.TestNG_DoDTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.consumercredits.dod.TestNG_DoDTestSuite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="boReachCheck">
+                  </a> <!-- boReachCheck -->
+                  <span class="method-name">boReachCheck</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #accountNumber
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NLLH4000520205&apos;, ip: &apos;10.121.233.45&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190827005903, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 90148, moz:profile: C:\Users\C25713\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1aa8d286-9473-4f4c-b0c6-14d08ccdd1eb
+*** Element info: {Using=id, value=accountNumber}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.consumercredits.dod.TestNG_DoDTestSuite.boReachCheck(TestNG_DoDTestSuite.java:159)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="languageChangeCheck">
+                  </a> <!-- languageChangeCheck -->
+                  <span class="method-name">languageChangeCheck</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: h2
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NLLH4000520205&apos;, ip: &apos;10.121.233.45&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190827005903, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 90148, moz:profile: C:\Users\C25713\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1aa8d286-9473-4f4c-b0c6-14d08ccdd1eb
+*** Element info: {Using=tag name, value=h2}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:396)
+	at org.openqa.selenium.By$ByTagName.findElement(By.java:320)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.consumercredits.dod.TestNG_DoDTestSuite.languageChangeCheck(TestNG_DoDTestSuite.java:134)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successSearch">
+                  </a> <!-- successSearch -->
+                  <span class="method-name">successSearch</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: .//span[@class = &apos;ng-binding ng-scope&apos; and contains(text(), &apos;Legal problems&apos;) ]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NLLH4000520205&apos;, ip: &apos;10.121.233.45&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190827005903, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 90148, moz:profile: C:\Users\C25713\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1aa8d286-9473-4f4c-b0c6-14d08ccdd1eb
+*** Element info: {Using=xpath, value=.//span[@class = &apos;ng-binding ng-scope&apos; and contains(text(), &apos;Legal problems&apos;) ]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.consumercredits.dod.TestNG_DoDTestSuite.successSearch(TestNG_DoDTestSuite.java:178)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.consumercredits.dod.TestNG_DoDTestSuite-class-failed -->
+          <div class="suite-com.consumercredits.dod.TestNG_DoDTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.consumercredits.dod.TestNG_DoDTestSuite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="accountGroupVerification(213319101, CRCPL)">
+                  </a> <!-- accountGroupVerification(213319101, CRCPL) -->
+                  <span class="method-name">accountGroupVerification</span>
+                  <span class="parameters">(213319101, CRCPL)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accountGroupVerification(490969917, CCPL)">
+                  </a> <!-- accountGroupVerification(490969917, CCPL) -->
+                  <span class="method-name">accountGroupVerification</span>
+                  <span class="parameters">(490969917, CCPL)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accountGroupVerification(213101882, CCNPL)">
+                  </a> <!-- accountGroupVerification(213101882, CCNPL) -->
+                  <span class="method-name">accountGroupVerification</span>
+                  <span class="parameters">(213101882, CCNPL)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accountGroupVerification(101192592, CSPL)">
+                  </a> <!-- accountGroupVerification(101192592, CSPL) -->
+                  <span class="method-name">accountGroupVerification</span>
+                  <span class="parameters">(101192592, CSPL)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accountGroupVerification(107362252, CRPL)">
+                  </a> <!-- accountGroupVerification(107362252, CRPL) -->
+                  <span class="method-name">accountGroupVerification</span>
+                  <span class="parameters">(107362252, CRPL)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accountGroupVerification(12345888, ALFAM)">
+                  </a> <!-- accountGroupVerification(12345888, ALFAM) -->
+                  <span class="method-name">accountGroupVerification</span>
+                  <span class="parameters">(12345888, ALFAM)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accountGroupVerification(213116782, CRCNPL)">
+                  </a> <!-- accountGroupVerification(213116782, CRCNPL) -->
+                  <span class="method-name">accountGroupVerification</span>
+                  <span class="parameters">(213116782, CRCNPL)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.consumercredits.dod.TestNG_DoDTestSuite-class-passed -->
+        </div> <!-- panel com.consumercredits.dod.TestNG_DoDTestSuite -->
+        <div panel-name="test-xml-com.consumercredits.dod.TestNG_DoDTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;com.consumercredits.dod.TestNG_DoDTestSuite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.consumercredits.dod.TestNG_DoDTestSuite&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- com.consumercredits.dod.TestNG_DoDTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-com.consumercredits.dod.TestNG_DoDTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for com.consumercredits.dod.TestNG_DoDTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-com.consumercredits.dod.TestNG_DoDTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for com.consumercredits.dod.TestNG_DoDTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-com.consumercredits.dod.TestNG_DoDTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for com.consumercredits.dod.TestNG_DoDTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_com.consumercredits.dod.TestNG_DoDTestSuite');
+function tableData_com.consumercredits.dod.TestNG_DoDTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'successSearch')
+data.setCell(0, 2, 'com.consumercredits.dod.TestNG_DoDTestSuite')
+data.setCell(0, 3, 20190);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'accountGroupVerification')
+data.setCell(1, 2, 'com.consumercredits.dod.TestNG_DoDTestSuite')
+data.setCell(1, 3, 3767);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'accountGroupVerification')
+data.setCell(2, 2, 'com.consumercredits.dod.TestNG_DoDTestSuite')
+data.setCell(2, 3, 3519);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'accountGroupVerification')
+data.setCell(3, 2, 'com.consumercredits.dod.TestNG_DoDTestSuite')
+data.setCell(3, 3, 3392);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'accountGroupVerification')
+data.setCell(4, 2, 'com.consumercredits.dod.TestNG_DoDTestSuite')
+data.setCell(4, 3, 3318);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'accountGroupVerification')
+data.setCell(5, 2, 'com.consumercredits.dod.TestNG_DoDTestSuite')
+data.setCell(5, 3, 3294);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'accountGroupVerification')
+data.setCell(6, 2, 'com.consumercredits.dod.TestNG_DoDTestSuite')
+data.setCell(6, 3, 3267);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'accountGroupVerification')
+data.setCell(7, 2, 'com.consumercredits.dod.TestNG_DoDTestSuite')
+data.setCell(7, 3, 3185);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'languageChangeCheck')
+data.setCell(8, 2, 'com.consumercredits.dod.TestNG_DoDTestSuite')
+data.setCell(8, 3, 280);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'boReachCheck')
+data.setCell(9, 2, 'com.consumercredits.dod.TestNG_DoDTestSuite')
+data.setCell(9, 3, 25);
+window.suiteTableData['com.consumercredits.dod.TestNG_DoDTestSuite']= { tableData: data, tableDiv: 'times-div-com.consumercredits.dod.TestNG_DoDTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <div id="times-div-com.consumercredits.dod.TestNG_DoDTestSuite">
+              </div> <!-- times-div-com.consumercredits.dod.TestNG_DoDTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-com.consumercredits.dod.TestNG_DoDTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for com.consumercredits.dod.TestNG_DoDTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-com.consumercredits.dod.TestNG_DoDTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-com.consumercredits.dod.TestNG_DoDTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.consumercredits.dod.TestNG_DoDTestSuite</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">35552 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">languageChangeCheck</span>
+                <span class="method-start">37945 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=languageChangeCheck status=FAILURE method=TestNG_DoDTestSuite.languageChangeCheck()...)</span>
+                <span class="method-start">38231 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">39317 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">boReachCheck</span>
+                <span class="method-start">39447 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=boReachCheck status=FAILURE method=TestNG_DoDTestSuite.boReachCheck()[pri:1, instan...)</span>
+                <span class="method-start">39473 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">40523 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">successSearch</span>
+                <span class="method-start">40559 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=successSearch status=FAILURE method=TestNG_DoDTestSuite.successSearch()[pri:2, inst...)</span>
+                <span class="method-start">60751 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">61814 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">accountGroupVerification(101192592, CSPL)</span>
+                <span class="method-start">61830 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=accountGroupVerification status=SUCCESS method=TestNG_DoDTestSuite.accountGroupVeri...)</span>
+                <span class="method-start">65223 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">66296 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">accountGroupVerification(107362252, CRPL)</span>
+                <span class="method-start">66309 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=accountGroupVerification status=SUCCESS method=TestNG_DoDTestSuite.accountGroupVeri...)</span>
+                <span class="method-start">69603 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">70672 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">accountGroupVerification(490969917, CCPL)</span>
+                <span class="method-start">70686 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=accountGroupVerification status=SUCCESS method=TestNG_DoDTestSuite.accountGroupVeri...)</span>
+                <span class="method-start">73953 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">75010 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">accountGroupVerification(213319101, CRCPL)</span>
+                <span class="method-start">75023 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=accountGroupVerification status=SUCCESS method=TestNG_DoDTestSuite.accountGroupVeri...)</span>
+                <span class="method-start">78208 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">79264 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">accountGroupVerification(213116782, CRCNPL)</span>
+                <span class="method-start">79916 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=accountGroupVerification status=SUCCESS method=TestNG_DoDTestSuite.accountGroupVeri...)</span>
+                <span class="method-start">83435 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">84501 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">accountGroupVerification(213101882, CCNPL)</span>
+                <span class="method-start">84513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=accountGroupVerification status=SUCCESS method=TestNG_DoDTestSuite.accountGroupVeri...)</span>
+                <span class="method-start">87831 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">88887 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">accountGroupVerification(12345888, ALFAM)</span>
+                <span class="method-start">88923 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=accountGroupVerification status=SUCCESS method=TestNG_DoDTestSuite.accountGroupVeri...)</span>
+                <span class="method-start">92690 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">93736 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

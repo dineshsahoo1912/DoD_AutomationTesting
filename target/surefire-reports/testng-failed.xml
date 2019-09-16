@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.consumercredits.dod.TestNG_DoDTestSuite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.consumercredits.dod.TestNG_DoDTestSuite">
+        <methods>
+          <include name="successSearch"/>
+          <include name="tearDown"/>
+          <include name="beforeTest"/>
+          <include name="boReachCheck"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="languageChangeCheck"/>
+        </methods>
+      </class> <!-- com.consumercredits.dod.TestNG_DoDTestSuite -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.consumercredits.dod.TestNG_DoDTestSuite] -->
